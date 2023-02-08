@@ -1,0 +1,11 @@
+import '@/styles/globals.css'
+import { Sora } from "@next/font/google";
+
+const sora = Sora({subsets: ['latin'], variable: '--font-sora', display:'swap'})
+export default function App({ Component, pageProps }) {
+  return (
+    <main className={`${sora.variable} font-sans`}>
+      <Component {...pageProps} />
+    </main>
+  );
+}
