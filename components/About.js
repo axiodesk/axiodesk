@@ -82,7 +82,7 @@ function About() {
         <div className="">
           <div className="">
             <h1 className="text-2xl md:text-4xl text-gray-800 font-bold w-full mt-2">
-              Our Stuff
+              Our Staff
             </h1>
             <p className="text-gray-500 w-full md:w-1/3 mt-2">
               Far far away, behind the word mountains, far from the countries
@@ -105,16 +105,24 @@ function About() {
                   {td.designation}
                 </h3>
                 <div className="flex justify-center items-center gap-5 mt-2">
-                  <Link href={`#`} className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
+                  <Link
+                    href={`#`}
+                    className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
                     <AiFillFacebook />
                   </Link>
-                  <Link href={`#`} className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
+                  <Link
+                    href={`#`}
+                    className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
                     <AiFillTwitterSquare />
                   </Link>
-                  <Link href={`#`} className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
+                  <Link
+                    href={`#`}
+                    className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
                     <AiFillInstagram />
                   </Link>
-                  <Link href={`#`} className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
+                  <Link
+                    href={`#`}
+                    className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
                     <AiFillLinkedin />
                   </Link>
                 </div>
