@@ -75,7 +75,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="mt-48 ">
+      {/* <div className="mt-48 ">
         <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
           About Us
         </span>
@@ -130,7 +130,7 @@ function About() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
