@@ -9,7 +9,7 @@ function About() {
   return (
     <div className="pt-32 pb-10 px-5 lg:px-16 2xl:px-80" id="about">
       <div>
-        <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
+        <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
           Hi there!
         </span>
         <div className="flex justify-between items-start flex-col md:flex-row gap-5 md:gap-0 mt-2">
@@ -32,7 +32,7 @@ function About() {
             <div className="mt-8">
               <Link
                 href="#"
-                className="border border-[#ee3e38] py-2 px-6 mt-5 text-[#ee3e38] uppercase tracking-widest text-sm font-semibold hover:bg-[#ee3e38] hover:text-white transition-all duration-300">
+                className="border border-[#7C0221] py-2 px-6 mt-5 text-[#7C0221] uppercase tracking-widest text-sm font-semibold hover:bg-[#7C0221] hover:text-white transition-all duration-300">
                 Read More <span className="ml-3">&#8594;</span>
               </Link>
             </div>

@@ -40,7 +40,7 @@ function Project() {
       <main className="pt-5 pb-10 px-5 lg:px-16 2xl:px-80">
         <div>
           <div>
-            <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
+            <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
               Featured works
             </span>
             <h1 className="text-2xl md:text-6xl text-gray-800 font-black w-full">
@@ -65,7 +65,7 @@ function Project() {
                 </h1>
                 <Link
                   href={`${c.link}`}
-                  className="mt-2 text-[#ee3e38] cursor-pointer rounded-sm">
+                  className="mt-2 text-[#7C0221] cursor-pointer rounded-sm">
                   Check on Youtube
                 </Link>
               </div>
@@ -74,7 +74,7 @@ function Project() {
           <div className="mt-10">
             <Link
               href={`/project`}
-              className="text-xl md:text-2xl font-semibold text-[#ee3e38]">
+              className="text-xl md:text-2xl font-semibold text-[#7C0221]">
               View All Works <span className="ml-3">&#8594;</span>
             </Link>
           </div>

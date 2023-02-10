@@ -17,7 +17,7 @@ function about() {
       <main className="px-5 lg:px-16 2xl:px-80 py-5 md:py-16">
         <div className="flex justify-between items-start flex-col md:flex-row gap-5 md:gap-0 mt-2">
           <div>
-            <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
+            <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
               Our story
             </span>
           </div>
@@ -75,7 +75,7 @@ function about() {
         {/* Vision */}
         <div className="flex justify-between items-start flex-col md:flex-row gap-5 md:gap-0 mt-10">
           <div>
-            <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
+            <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
               Our Vision
             </span>
           </div>
@@ -95,7 +95,7 @@ function about() {
         {/* Mission */}
         <div className="flex justify-between items-start flex-col md:flex-row gap-5 md:gap-0 mt-10">
           <div>
-            <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
+            <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
               Our Mission
             </span>
           </div>

@@ -95,7 +95,7 @@ function service() {
                     <div
                       className="w-full border border-gray-400/20 border-dashed rounded-sm p-6"
                       key={d.id}>
-                      <h3 className="font-bold mb-3 text-orange-500 text-lg uppercase">
+                      <h3 className="font-bold mb-3 text-[#7C0221] text-lg uppercase">
                         {d.title}
                       </h3>
                       <p className="text-gray-400 font-light">{d.desc}</p>
@@ -109,7 +109,7 @@ function service() {
           {/* Steps Block */}
           <div className="steps py-20 px-5 lg:px-16 2xl:px-80">
             <div className="w-full md:w-3/4">
-              <span className="text-orange-500 text-md 2xl:text-2xl font-semibold uppercase">
+              <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
                 Our Process
               </span>
               <h1 className="text-2xl md:text-6xl text-gray-800 font-black w-full md:w-2/3 mt-4">
@@ -125,7 +125,7 @@ function service() {
             {/* Steps Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 p-4">
               <div className="step border-l-2 pl-4 border-gray-800">
-                <AiOutlineForm className="text-xl md:text-3xl text-orange-500" />
+                <AiOutlineForm className="text-xl md:text-3xl text-[#7C0221]" />
                 <h2 className="text-lg md:text-xl text-gray-800 font-extrabold mt-4">
                   Guided Input
                 </h2>
@@ -135,7 +135,7 @@ function service() {
               </div>
 
               <div className="step border-l-2 pl-4 border-gray-800">
-                <AiOutlineMessage className="text-xl md:text-3xl text-orange-500" />
+                <AiOutlineMessage className="text-xl md:text-3xl text-[#7C0221]" />
                 <h2 className="text-lg md:text-xl text-gray-800 font-extrabold mt-4">
                   Project Pulse
                 </h2>
@@ -144,7 +144,7 @@ function service() {
                 </p>
               </div>
               <div className="step border-l-2 pl-4 border-gray-800">
-                <AiOutlineSend className="text-xl md:text-3xl text-orange-500" />
+                <AiOutlineSend className="text-xl md:text-3xl text-[#7C0221]" />
                 <h2 className="text-lg md:text-xl text-gray-800 font-extrabold mt-4">
                   Deliveries
                 </h2>
@@ -153,7 +153,7 @@ function service() {
                 </p>
               </div>
               <div className="step border-l-2 pl-4 border-gray-800">
-                <AiOutlineHistory className="text-xl md:text-3xl text-orange-500" />
+                <AiOutlineHistory className="text-xl md:text-3xl text-[#7C0221]" />
                 <h2 className="text-lg md:text-xl text-gray-800 font-extrabold mt-4">
                   Iteration
                 </h2>

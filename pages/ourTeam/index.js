@@ -53,7 +53,7 @@ function index() {
       <Header title={`Our Team`} />
       <main className="pb-10 px-5 lg:px-16 2xl:px-80 ">
         <div className="mt-48 ">
-          <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
+          <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
             About Us
           </span>
           <div className="">
@@ -75,7 +75,7 @@ function index() {
                     alt="Profile picture"
                     className="w-48 h-48 md:w-72 md:h-72 xl:w-72 xl:h-96 rounded-xl flex justify-center items-center object-cover cursor-pointer hover:scale-105 transition-all duration-200 hover:shadow-2xl"
                   />
-                  <h1 className="mt-3 text-lg md:text-xl text-[#ee3e38] text-center">
+                  <h1 className="mt-3 text-lg md:text-xl text-[#7C0221] text-center">
                     {td.memberName}
                   </h1>
                   <h3 className="text-lg md:text-xl text-gray-500 text-center">
@@ -84,22 +84,22 @@ function index() {
                   <div className="flex justify-center items-center gap-5 mt-2">
                     <Link
                       href={`#`}
-                      className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
+                      className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#7C0221] transition-all duration-200 hover:scale-110">
                       <AiFillFacebook />
                     </Link>
                     <Link
                       href={`#`}
-                      className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
+                      className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#7C0221] transition-all duration-200 hover:scale-110">
                       <AiFillTwitterSquare />
                     </Link>
                     <Link
                       href={`#`}
-                      className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
+                      className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#7C0221] transition-all duration-200 hover:scale-110">
                       <AiFillInstagram />
                     </Link>
                     <Link
                       href={`#`}
-                      className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#ee3e38] transition-all duration-200 hover:scale-110">
+                      className="text-2xl text-gray-800 hover:animate-pulse hover:text-[#7C0221] transition-all duration-200 hover:scale-110">
                       <AiFillLinkedin />
                     </Link>
                   </div>
