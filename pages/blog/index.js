@@ -9,6 +9,7 @@ import client from '../../client'
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import CustomHead from "@/components/CustomHead";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -19,12 +20,7 @@ function index({posts}) {
   // console.log(posts)
   return (
     <>
-      <Head>
-        <title>Axiodesk</title>
-        <meta name="description" content="Axiodesk - Home" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./img/logo.png" />
-      </Head>
+      <CustomHead pageName='Blog' />
       <Nav />
       <Header title={`Our Story`} />
       <main className="px-5 lg:px-16 2xl:px-80 py-16 md:py-20 border-t-[1px]">

@@ -11,7 +11,7 @@ function Hero() {
         <p className="my-5 md:text-xl xl:text-2xl text-gray-500">
           Making your brand shine, one campaign at a time.
         </p>
-        <div className="cursor-pointer border border-[#ee3e38] py-2 px-6 mt-5 text-[#ee3e38] uppercase tracking-widest text-sm font-semibold hover:bg-[#ee3e38] hover:text-white transition-all duration-300">
+        <div className="cursor-pointer border border-[#7C0221] py-2 px-6 mt-5 text-[#7C0221] uppercase tracking-widest text-sm font-semibold hover:bg-[#7C0221] hover:text-white transition-all duration-300">
           <Link href="#services">
             Learn More <span className="ml-3">&#8594;</span>
           </Link>

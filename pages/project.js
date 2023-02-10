@@ -1,20 +1,16 @@
 import React from 'react'
-import Head from 'next/head'
+import Link from 'next/link';
+
+import CustomHead from '@/components/CustomHead';
 import Nav from '@/components/Nav';
 import Header from '@/components/Header';
-import Link from 'next/link';
 import Footer from '@/components/Footer';
 
 
 function project() {
   return (
     <>
-      <Head>
-        <title>Axiodesk - Projects</title>
-        <meta name="description" content="Axiodesk - Projects" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./img/logo.png" />
-      </Head>
+      <CustomHead pageName="Project" />
 
       <Nav />
       <Header title={`Projects`} />

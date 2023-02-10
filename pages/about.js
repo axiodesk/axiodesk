@@ -4,17 +4,13 @@ import Head from "next/head";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CustomHead from "@/components/CustomHead";
 
 
 function about() {
   return (
     <>
-      <Head>
-        <title>Axiodesk</title>
-        <meta name="description" content="Axiodesk - About" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./img/logo.png" />
-      </Head>
+      <CustomHead pageName="About" />
       <Nav />
       <Header title={`About`} />
 

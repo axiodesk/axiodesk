@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 
+import CustomHead from "@/components/CustomHead";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
@@ -16,13 +16,7 @@ import {
 function contact() {
   return (
     <>
-      <Head>
-        <title>Axiodesk</title>
-        <meta name="description" content="Axiodesk - Home" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link rel="icon" href="./img/logo.png" />
-      </Head>
+      <CustomHead pageName="Contact" />
 
       <Nav />
       <Header title={`Contact`} />
@@ -41,7 +35,9 @@ function contact() {
             </div>
             <div className="social mt-10">
               <div className="mb-3">
-                <p className="text-xl md:text-2xl font-black text-orange-500 underline decoration-wavy">Follow Us</p>
+                <p className="text-xl md:text-2xl font-black text-orange-500 underline decoration-wavy">
+                  Follow Us
+                </p>
               </div>
               <div className="flex justify-start items-center gap-5">
                 <Link href={``}>
@@ -51,10 +47,10 @@ function contact() {
                   <AiFillLinkedin className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300" />
                 </Link>
                 <Link href={``}>
-                  <AiFillTwitterSquare className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300"/>
+                  <AiFillTwitterSquare className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300" />
                 </Link>
                 <Link href={``}>
-                  <AiFillInstagram className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300"/>
+                  <AiFillInstagram className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300" />
                 </Link>
               </div>
             </div>

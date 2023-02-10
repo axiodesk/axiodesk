@@ -1,6 +1,6 @@
 import React from "react";
-import Head from "next/head";
 
+import CustomHead from "@/components/CustomHead";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "@/components/Footer";
@@ -67,14 +67,8 @@ function service() {
     },
   ];
   return (
-    <div>
-      <Head>
-        <title>Axiodesk - Services</title>
-        <meta name="description" content="Axiodesk service Page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link rel="icon" href="./img/logo.png" />
-      </Head>
+    <>
+      <CustomHead pageName="Service" />
       <main>
         <Nav />
         <Header title={"Service"} />
@@ -173,7 +167,7 @@ function service() {
 
         <Footer />
       </main>
-    </div>
+    </>
   );
 }
 
