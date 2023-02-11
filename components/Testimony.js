@@ -1,11 +1,30 @@
-import React from 'react'
+import React from "react";
+import groq from "groq";
+import client from "@/lib/client";
+import imageUrlBuilder from "@sanity/image-url";
 
-function Testimony() {
-  return <div className="py-10 px-5 lg:px-16 2xl:px-80">
-    <div className="testimony">
+
+
+
+
+export default function Testimony({ posts }) {
+  console.log("testimonials", posts);
+  return (
+    <>
       
-    </div>
-  </div>;
+    </>
+  );
 }
 
-export default Testimony
+
+
+export async function getStaticProps() {
+  const posts = await client.fetch(groq`
+      *[_type == "testimonial"]
+    `);
+  return {
+    props: {
+      posts,
+    },
+  };
+}

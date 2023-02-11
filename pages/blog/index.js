@@ -1,10 +1,9 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 import groq from "groq";
 import imageUrlBuilder from "@sanity/image-url";
 
-import client from '../../client'
+import client from "../../lib/client";
 
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -15,12 +14,11 @@ function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 
-
-function index({posts}) {
-  // console.log(posts)
+function index({ posts }) {
+  console.log(posts)
   return (
     <>
-      <CustomHead pageName='Blog' />
+      <CustomHead pageName="Blog" />
       <Nav />
       <Header title={`Our Story`} />
       <main className="px-5 lg:px-16 2xl:px-80 py-16 md:py-20 border-t-[1px]">

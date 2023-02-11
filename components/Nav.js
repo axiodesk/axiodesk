@@ -17,14 +17,14 @@ const Nav = () => {
   return (
     <nav
       className={`h-16 px-5 lg:px-16 2xl:px-80 w-full bg-white flex justify-between items-center fixed top-0 left-0 z-50 shadow-xl`}>
-      <div className="logo cursor-pointer">
+      <Link href={`/`} className="logo cursor-pointer">
         <img
           src="/img/axioLogo.png"
           alt="Logo"
           className="w-32 hidden md:block"
         />
         <img src="/img/favicon.png" alt="Logo" className="w-8 md:hidden" />
-      </div>
+      </Link>
       <div className={open ? `links lg:hidden` : `hidden lg:block lg:`}>
         <ul
           className={

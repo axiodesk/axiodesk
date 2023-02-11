@@ -5,7 +5,7 @@ import groq from "groq";
 import imageUrlBuilder from "@sanity/image-url";
 import { PortableText } from "@portabletext/react";
 
-import client from "../../client";
+import client from "../../lib/client";
 
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
@@ -105,7 +105,7 @@ export async function getStaticPaths() {
 
   return {
     paths: paths.map((slug) => ({ params: { slug } })),
-    fallback: 'blocking',
+    fallback: "blocking",
   };
 }
 
