@@ -14,8 +14,10 @@ function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 
-function index({ posts }) {
-  console.log(posts)
+function index({ posts, categories }) {
+  console.log("Posts, ", posts)
+  console.log("Categoires, ", categories)
+
   return (
     <>
       <CustomHead pageName="Blog" />
@@ -51,21 +53,12 @@ function index({ posts }) {
               Recommended Topics
             </h3>
             <div className="flex justify-start items-start flex-wrap gap-2">
-              <span className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full">
-                Data Science
-              </span>
-              <span className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full">
-                Technology
-              </span>
-              <span className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full">
-                Writing
-              </span>
-              <span className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full">
-                Self Improvement
-              </span>
-              <span className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full">
-                Mechine Learning
-              </span>
+              {categories &&
+                categories.map((c) => (
+                  <span className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full" key={c._id}>
+                    {c.title}
+                  </span>
+                ))}
             </div>
           </div>
         </div>
@@ -79,9 +72,13 @@ export async function getStaticProps() {
   const posts = await client.fetch(groq`
       *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
     `);
+  const categories = await client.fetch(groq`
+      *[_type == "category"]
+    `);
   return {
     props: {
       posts,
+      categories,
     },
   };
 }
