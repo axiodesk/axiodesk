@@ -15,7 +15,7 @@ import client from "../lib/client";
 
 // for slider
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/navigation";
@@ -54,15 +54,14 @@ export default function Home({testimonials}) {
           <div className="testimony">
             <Swiper
               // install Swiper modules
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
               spaceBetween={50}
               slidesPerView={1}
               navigation={{ clickable: true }}
               pagination={{ clickable: true, dynamicBullets: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
-              loop
-              autoplay={{ delay: 2000 }}>
+              autoplay={{ delay: 3000 }}>
               {testimonials &&
                 testimonials.map((t) => (
                   <SwiperSlide key={t._id}>
