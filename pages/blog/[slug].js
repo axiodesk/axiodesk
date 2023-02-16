@@ -9,6 +9,7 @@ import client from "../../lib/client";
 
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
+import CustomHead from "@/components/CustomHead";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -29,6 +30,52 @@ const ptComponents = {
       );
     },
   },
+  list: {
+    bullet: ({ children }) => (
+      <ul className="ml-10 py-5 list-disc space-y-5">{children}</ul>
+    ),
+    number: ({ children }) => (
+      <ol className="mt-lg list-decimal">{children}</ol>
+    ),
+  },
+
+  block: {
+    h1: ({ children }) => (
+      <h1 className="text-4xl font-bold py-10">{children}</h1>
+    ),
+    h2: ({ children }) => (
+      <h2 className="text-3xl font-bold py-10">{children}</h2>
+    ),
+    h3: ({ children }) => (
+      <h3 className="text-2xl font-bold py-10">{children}</h3>
+    ),
+    h4: ({ children }) => (
+      <h4 className="text-xl font-bold py-10">{children}</h4>
+    ),
+
+    blockquote: ({ children }) => (
+      <blockquote className="border-l-[#7C0221] border-l-4 pl-5 py-5 my-5">
+        {children}
+      </blockquote>
+    ),
+  },
+
+  marks: {
+    link: ({ children, value }) => {
+      const rel = value.href.startsWith("/")
+        ? "noreferrer noopener"
+        : undefined;
+
+      return (
+        <Link
+          href={value.href}
+          rel={rel}
+          className="underline decoration-[#7c0221] hover:decoration-black mt-5">
+          {children}
+        </Link>
+      );
+    },
+  },
 };
 
 function Details({ post }) {
@@ -36,12 +83,7 @@ function Details({ post }) {
   const { title = "Missing Title", categories, postImage, body = [] } = post;
   return (
     <>
-      <Head>
-        <title>Axiodesk</title>
-        <meta name="description" content="Axiodesk - Home" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./img/logo.png" />
-      </Head>
+      <CustomHead pageName={`Blog post`} />
       <Nav />
       <Header title={`Have a look ..`} />
       <main className="px-5 lg:px-16 2xl:px-80 py-5 md:py-16">
@@ -80,8 +122,8 @@ function Details({ post }) {
 
         <div className="mt-16">
           <Link
-            href={`/`}
-            className="py-3 px-8 border-[1px] border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 transition-all duration-300 text-lg">
+            href={`/blog`}
+            className="py-2 px-8 border-[1px] border-[#7C0221] text-[#7C0221] hover:text-white hover:bg-[#7C0221] transition-all duration-300 text-lg rounded-sm">
             <span className="mr-3">&#8592;</span> Back to all post
           </Link>
         </div>

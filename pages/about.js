@@ -22,7 +22,7 @@ function about() {
             </span>
           </div>
           <div className="w-full md:w-2/3 text-gray-500 mb-5 space-y-5">
-            <div className="w-20 h-[2px] bg-orange-500"></div>
+            <div className="w-20 h-[2px] bg-[#7C0221]"></div>
             <div className="mb-16">
               <p className="">
                 Id in massa et feugiat non enim non pretium pretium fermentum
@@ -80,7 +80,7 @@ function about() {
             </span>
           </div>
           <div className="w-full md:w-2/3 text-gray-500 mb-5 space-y-5">
-            <div className="w-20 h-[2px] bg-orange-500"></div>
+            <div className="w-20 h-[2px] bg-[#7C0221]"></div>
             <div className="mb-16">
               <p className="">
                 Faucibus volutpat pellentesque turpis lacus pharetra massa
@@ -100,7 +100,7 @@ function about() {
             </span>
           </div>
           <div className="w-full md:w-2/3 text-gray-500 mb-5 space-y-5">
-            <div className="w-20 h-[2px] bg-orange-500"></div>
+            <div className="w-20 h-[2px] bg-[#7C0221]"></div>
             <div className="mb-16">
               <p className="">
                 Elit egestas nisl, pellentesque ante aliquam gravida ultrices
@@ -110,25 +110,25 @@ function about() {
 
               <ul className="mt-5">
                 <li>
-                  <span className="mr-3 text-orange-500 font-extrabold">
+                  <span className="mr-3 text-[#7C0221] font-extrabold">
                     &#8594;
                   </span>{" "}
                   Ullamcorper id nibh ac egestas
                 </li>
                 <li>
-                  <span className="mr-3 text-orange-500 font-extrabold">
+                  <span className="mr-3 text-[#7C0221] font-extrabold">
                     &#8594;
                   </span>{" "}
                   Consequat parturient venenatis elementum
                 </li>
                 <li>
-                  <span className="mr-3 text-orange-500 font-extrabold">
+                  <span className="mr-3 text-[#7C0221] font-extrabold">
                     &#8594;
                   </span>{" "}
                   In pulvinar molestie quis aliquet
                 </li>
                 <li>
-                  <span className="mr-3 text-orange-500 font-extrabold">
+                  <span className="mr-3 text-[#7C0221] font-extrabold">
                     &#8594;
                   </span>{" "}
                   Nunc sed sem nec curabitur
@@ -137,7 +137,6 @@ function about() {
             </div>
           </div>
         </div>
-
       </main>
 
       <Footer />

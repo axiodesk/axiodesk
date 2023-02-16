@@ -41,7 +41,7 @@ const ptComponents = {
 function Details({ teamData }) {
   return (
     <>
-      <CustomHead pageName={`Individual pages`} />
+      <CustomHead pageName={`Profile page`} />
       <Nav />
       <Header title={`Profile`} />
 
@@ -64,11 +64,11 @@ function Details({ teamData }) {
               </div>
             )}
           </div>
-          <div className="details">
+          <div className="details md:ml-20">
             <h2 className="text-2xl font-bold mb-5">Details</h2>
             <p className="text-2xl font-light tracking-wider mb-5 w-full inline-block">{teamData.name}</p>
             <p className="text-lg font-light tracking-wider mb-5 w-full inline-block">{teamData.designation}</p>
-            <div className="socialLinks flex gap-5 justify-center items-center">
+            <div className="socialLinks flex gap-5 justify-start items-center">
               <Link href={teamData.fbLink ? `${teamData.fbLink}` : `#`}>
                 <AiFillFacebook className="text-2xl text-gray-500" />
               </Link>

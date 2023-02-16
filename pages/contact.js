@@ -41,16 +41,16 @@ function contact() {
               </div>
               <div className="flex justify-start items-center gap-5">
                 <Link href={``}>
-                  <AiFillFacebook className="text-2xl md:text-3xl hover:text-[#7C0221] transition duration-300" />
+                  <AiFillFacebook className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
                 </Link>
                 <Link href={``}>
-                  <AiFillLinkedin className="text-2xl md:text-3xl hover:text-[#7C0221] transition duration-300" />
+                  <AiFillLinkedin className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
                 </Link>
                 <Link href={``}>
-                  <AiFillTwitterSquare className="text-2xl md:text-3xl hover:text-[#7C0221] transition duration-300" />
+                  <AiFillTwitterSquare className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
                 </Link>
                 <Link href={``}>
-                  <AiFillInstagram className="text-2xl md:text-3xl hover:text-[#7C0221] transition duration-300" />
+                  <AiFillInstagram className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
                 </Link>
               </div>
             </div>
@@ -90,7 +90,7 @@ function contact() {
                   className="p-3 bg-white border-[1px] border-gray-500 w-full sm:w-[500px] rounded-sm mb-6"></textarea>
               </div>
               <div className="btn">
-                <button className="text-[#7C0221] py-2 px-8 border-[1px] border-[#7C0221] hover:bg-[#7C0221] hover:text-white transition-all duration-300 md:text-lg">
+                <button className="text-[#7C0221] py-2 px-8 border-[1px] border-[#7C0221] hover:bg-[#7C0221] hover:text-white transition-all duration-300 md:text-lg rounded-sm">
                   Submit <span className="ml-3">&#8594;</span>
                 </button>
               </div>

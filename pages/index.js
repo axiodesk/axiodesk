@@ -21,6 +21,7 @@ import "swiper/css/bundle";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import CustomHead from "@/components/CustomHead";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -30,13 +31,7 @@ export default function Home({testimonials}) {
   console.log(testimonials[0].text)
   return (
     <div>
-      <Head>
-        <title>Axiodesk</title>
-        <meta name="description" content="Axiodesk - Home" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link rel="icon" href="./img/logo.png" />
-      </Head>
+      <CustomHead pageName={`Home`} />
       <main>
         {/* Nav */}
         <Nav />
@@ -61,7 +56,7 @@ export default function Home({testimonials}) {
               pagination={{ clickable: true, dynamicBullets: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
-              autoplay={{ delay: 3000 }}>
+              autoplay={{ delay: 5000 }}>
               {testimonials &&
                 testimonials.map((t) => (
                   <SwiperSlide key={t._id}>

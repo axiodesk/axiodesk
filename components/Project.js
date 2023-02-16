@@ -36,7 +36,6 @@ function Project() {
     ];
   return (
     <>
-    <CustomHead pageName="Projects" />
       <main className="pt-5 pb-10 px-5 lg:px-16 2xl:px-80">
         <div>
           <div>
