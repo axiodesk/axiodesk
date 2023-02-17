@@ -6,51 +6,61 @@ function Service() {
       id: 1,
       title: "SEO",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/seo.svg",
     },
     {
       id: 2,
       title: "SMM",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/smm.svg",
     },
     {
       id: 3,
       title: "LinkedIn Outreach",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/linkedInOut.svg",
     },
     {
       id: 4,
       title: "Facebook Campaign",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/fbCamp.svg",
     },
     {
       id: 5,
       title: "Customer/Product Support",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/cusSup.svg",
     },
     {
       id: 6,
       title: "Digital Marketing Website",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/dm.svg",
     },
     {
       id: 7,
       title: "Marketing Blue Print and consultancy",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/consultancy.svg",
     },
     {
       id: 8,
       title: "Virtual marketing assistance",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/va.svg",
     },
     {
       id: 9,
       title: "Affliate Ad marketing",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/affmar.svg",
     },
     {
       id: 10,
       title: "Graphics Design",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      icon: "/img/serviceIcon/gd.svg",
     },
   ];
 
@@ -84,6 +94,9 @@ function Service() {
                 <div
                   className="w-full border border-gray-400/20 border-dashed rounded-sm p-6"
                   key={d.id}>
+                    {d.icon && (
+                      <img src={d.icon} alt="Icon" className="w-1/2 md:w-1/3 mb-3" />
+                    )}
                   <h3 className="font-bold mb-3 text-white text-lg uppercase">
                     {d.title}
                   </h3>

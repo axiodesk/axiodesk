@@ -1,9 +1,18 @@
 import React from 'react'
 import Link from 'next/link'
-import CustomHead from './CustomHead';
+
+import groq from "groq";
+import imageUrlBuilder from "@sanity/image-url";
+import client from "../lib/client";
 
 
-function Project() {
+function urlFor(source) {
+  return imageUrlBuilder(client).image(source);
+}
+
+
+function Project({projects}) {
+  console.log(projects)
     const cases = [
       {
         id: 1,
@@ -81,6 +90,17 @@ function Project() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await client.fetch(groq`
+      *[_type == "projects"] | order(_createdAt asc)
+    `);
+  return {
+    props: {
+      projects,
+    },
+  };
 }
 
 export default Project

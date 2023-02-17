@@ -10,6 +10,7 @@ import client from "../../lib/client";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 import CustomHead from "@/components/CustomHead";
+import Footer from "@/components/Footer";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -128,6 +129,7 @@ function Details({ post }) {
           </Link>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
