@@ -19,6 +19,7 @@ function service() {
       id: 1,
       title: "SEO",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      // icon: '/img/serviceIcon/seo.png'
     },
     {
       id: 2,
@@ -95,7 +96,10 @@ function service() {
                     <div
                       className="w-full border border-gray-400/20 border-dashed rounded-sm p-6"
                       key={d.id}>
-                      <h3 className="font-bold mb-3 text-[#7C0221] text-lg uppercase">
+                        {d.icon && (
+                          <img src={d.icon} alt="Service Icon" className="w-1/3 md:w-1/2" />
+                        )}
+                      <h3 className="font-bold mb-3 text-white text-lg uppercase">
                         {d.title}
                       </h3>
                       <p className="text-gray-400 font-light">{d.desc}</p>

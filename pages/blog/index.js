@@ -15,8 +15,8 @@ function urlFor(source) {
 }
 
 function index({ posts, categories }) {
-  console.log("Posts, ", posts)
-  console.log("Categoires, ", categories)
+  console.log("Posts, ", posts);
+  console.log("Categoires, ", categories);
 
   return (
     <>
@@ -31,7 +31,7 @@ function index({ posts, categories }) {
               <Link href={`/blog/${post.slug.current}`} key={post._id}>
                 <div className="blog_content flex justify-between items-center gap-10 mb-5 border-b-[1px] border-gray-200 pb-5">
                   <div className="w-full">
-                    <h1 className="font-bold md:text-xl lg:text-3xl ">
+                    <h1 className="font-bold md:text-xl lg:text-3xl text-gray-800">
                       {post.title}
                     </h1>
                     {/* <p className="hidden sm:block mt-5 text-gray-500">
@@ -55,7 +55,9 @@ function index({ posts, categories }) {
             <div className="flex justify-start items-start flex-wrap gap-2">
               {categories &&
                 categories.map((c) => (
-                  <span className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full" key={c._id}>
+                  <span
+                    className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full"
+                    key={c._id}>
                     {c.title}
                   </span>
                 ))}

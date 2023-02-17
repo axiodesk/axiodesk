@@ -40,10 +40,7 @@ export default function Home({testimonials}) {
         <Hero />
         {/* About */}
         <About />
-        {/* Services */}
-        <Service />
-        {/* Projects */}
-        <Project />
+
         {/* Testimony */}
         <div className="py-20 px-5 lg:px-16 2xl:px-80">
           <div className="testimony">
@@ -66,14 +63,23 @@ export default function Home({testimonials}) {
                         alt="Client Image"
                         className="w-[150px] h-[150px] md:w-48 md:h-48 object-cover rounded-full p-2"
                       />
-                      <div className="uppercase tracking-widest text-xl md:text-2xl ">{t.name}</div>
-                      <div className="w-2/3 text-center py-12 text-gray-500 md:text-xl leading-7">{t.text}</div>
+                      <div className="uppercase tracking-widest text-xl md:text-2xl ">
+                        {t.name}
+                      </div>
+                      <div className="w-2/3 text-center py-12 text-gray-500 md:text-xl leading-7">
+                        {t.text}
+                      </div>
                     </div>
                   </SwiperSlide>
                 ))}
             </Swiper>
           </div>
         </div>
+        {/* Services */}
+        <Service />
+        {/* Projects */}
+        <Project />
+
         {/* Footer */}
         <Footer />
       </main>
