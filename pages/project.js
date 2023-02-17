@@ -80,7 +80,8 @@ function project({ projects }) {
           ))}
         </div>
       </main>
-
+          
+      {/* Footer */}
       <Footer />
     </>
   );

@@ -98,6 +98,8 @@ function contact() {
           </div>
         </div>
       </main>
+      
+      {/* Footer */}
       <Footer />
     </>
   );

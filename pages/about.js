@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "next/head";
+
 
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
@@ -139,6 +139,7 @@ function about() {
         </div>
       </main>
 
+      {/* Footer */}
       <Footer />
     </>
   );

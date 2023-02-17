@@ -5,7 +5,6 @@ import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Service from "@/components/Service";
-import Project from "@/components/Project";
 import Footer from "@/components/Footer";
 
 // For sanity
@@ -77,6 +76,7 @@ export default function Home({testimonials, projects}) {
         </div>
         {/* Services */}
         <Service />
+        
         {/* Projects */}
         <div className="pt-5 pb-10 px-5 lg:px-16 2xl:px-80">
           <div>

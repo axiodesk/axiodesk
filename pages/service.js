@@ -181,9 +181,10 @@ function service() {
             </div>
           </div>
         </div>
-
-        <Footer />
       </main>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
