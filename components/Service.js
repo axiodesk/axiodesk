@@ -84,7 +84,7 @@ function Service() {
                 <div
                   className="w-full border border-gray-400/20 border-dashed rounded-sm p-6"
                   key={d.id}>
-                  <h3 className="font-bold mb-3 text-orange-600 text-lg uppercase">
+                  <h3 className="font-bold mb-3 text-white text-lg uppercase">
                     {d.title}
                   </h3>
                   <p className="text-gray-400 font-light">{d.desc}</p>
