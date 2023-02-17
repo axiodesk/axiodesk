@@ -53,8 +53,8 @@ function project({ projects }) {
                   className="absolute -top-8 left-0 md:-left-8 -z-10 "
                 />
                 <img
-                  src="/img/projects/p1.jpg"
-                  alt=""
+                  src={urlFor(p.image)}
+                  alt="Project Image"
                   className="z-10 max-w-full h-auto"
                 />
                 <img
