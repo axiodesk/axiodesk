@@ -10,12 +10,13 @@ import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 
 import {
-  AiFillFacebook,
   AiFillTwitterSquare,
   AiFillLinkedin,
   AiFillGithub,
   AiOutlineLink,
 } from "react-icons/ai";
+
+import {FaResearchgate} from 'react-icons/fa'
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -33,6 +34,53 @@ const ptComponents = {
           loading="lazy"
           src={urlFor(value).width(320).height(240).fit("max").auto("format")}
         />
+      );
+    },
+  },
+  list: {
+    bullet: ({ children }) => (
+      <ul className="ml-10 py-5 list-disc space-y-5">{children}</ul>
+    ),
+    number: ({ children }) => (
+      <ol className="mt-lg list-decimal">{children}</ol>
+    ),
+  },
+
+  block: {
+    h1: ({ children }) => (
+      <h1 className="text-4xl font-bold pt-10">{children}</h1>
+    ),
+    h2: ({ children }) => (
+      <h2 className="text-3xl font-bold pt-8">{children}</h2>
+    ),
+    h3: ({ children }) => (
+      <h3 className="text-2xl font-bold pt-6">{children}</h3>
+    ),
+    h4: ({ children }) => (
+      <h4 className="text-xl font-bold pt-4">{children}</h4>
+    ),
+    normal: ({ children }) => <p className="pt-2">{children}</p>,
+
+    blockquote: ({ children }) => (
+      <blockquote className="border-l-[#7C0221] border-l-4 pl-5 py-5 my-5">
+        {children}
+      </blockquote>
+    ),
+  },
+
+  marks: {
+    link: ({ children, value }) => {
+      const rel = value.href.startsWith("/")
+        ? "noreferrer noopener"
+        : undefined;
+
+      return (
+        <Link
+          href={value.href}
+          rel={rel}
+          className="underline decoration-[#7c0221] hover:decoration-black mt-5">
+          {children}
+        </Link>
       );
     },
   },
@@ -66,12 +114,13 @@ function Details({ teamData }) {
           </div>
           <div className="details md:ml-20">
             <h2 className="text-2xl font-bold mb-5">Details</h2>
-            <p className="text-2xl font-light tracking-wider mb-5 w-full inline-block">{teamData.name}</p>
-            <p className="text-lg font-light tracking-wider mb-5 w-full inline-block">{teamData.designation}</p>
+            <p className="text-2xl font-light tracking-wider mb-5 w-full inline-block">
+              {teamData.name}
+            </p>
+            <p className="text-lg font-light tracking-wider mb-5 w-full inline-block">
+              {teamData.designation}
+            </p>
             <div className="socialLinks flex gap-5 justify-start items-center">
-              <Link href={teamData.fbLink ? `${teamData.fbLink}` : `#`}>
-                <AiFillFacebook className="text-2xl text-gray-500" />
-              </Link>
               <Link href={teamData.twLink ? `${teamData.twLink}` : `#`}>
                 <AiFillTwitterSquare className="text-2xl text-gray-500" />
               </Link>
@@ -81,8 +130,9 @@ function Details({ teamData }) {
               <Link href={teamData.github ? `${teamData.github}` : `#`}>
                 <AiFillGithub className="text-2xl text-gray-500" />
               </Link>
-              <Link href={teamData.github ? `${teamData.github}` : `#`}>
-                <AiOutlineLink className="text-2xl text-gray-500" />
+              <Link
+                href={teamData.researchGate ? `${teamData.researchGate}` : `#`}>
+                <FaResearchgate className="text-2xl text-gray-500" />
               </Link>
             </div>
           </div>
@@ -92,13 +142,7 @@ function Details({ teamData }) {
   );
 }
 
-const query = groq`*[_type == "team" && slug.current == $slug][0]{
-  slug,
-  name,
-  designation,
-  bio,
-  image
-}`;
+const query = groq`*[_type == "team" && slug.current == $slug][0]`;
 
 export async function getStaticPaths() {
   const paths = await client.fetch(

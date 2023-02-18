@@ -5,6 +5,8 @@ import imageUrlBuilder from "@sanity/image-url";
 
 import client from "../../lib/client";
 
+import {SlCalender} from 'react-icons/sl'
+
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -15,8 +17,8 @@ function urlFor(source) {
 }
 
 function index({ posts, categories }) {
-  console.log("Posts, ", posts);
-  console.log("Categoires, ", categories);
+  // console.log("Posts, ", posts);
+  // console.log("Categoires, ", categories);
 
   return (
     <>
@@ -34,8 +36,18 @@ function index({ posts, categories }) {
                     <h1 className="font-bold md:text-xl lg:text-3xl text-gray-800">
                       {post.title}
                     </h1>
-                    {/* <p className="hidden sm:block mt-5 text-gray-500">
-                    </p> */}
+                    <div className="mt-2 text-gray-500 flex items-center gap-2">
+                      <div>
+                        <SlCalender className="text-gray-500 font-light" />
+                      </div>
+                      <p className="text-gray-500 font-light">
+                        {new Date(post._createdAt).toLocaleString("en-US", {
+                          day: "numeric",
+                          month: "long",
+                          year: "numeric",
+                        })}
+                      </p>
+                    </div>
                   </div>
                   <div>
                     <img

@@ -50,9 +50,10 @@ export default function Home({testimonials, projects}) {
               slidesPerView={1}
               navigation={{ clickable: true }}
               pagination={{ clickable: true, dynamicBullets: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
-              autoplay={{ delay: 5000 }}>
+              // onSwiper={(swiper) => console.log(swiper)}
+              // onSlideChange={() => console.log("slide change")}
+              autoplay={{ delay: 5000 }}
+              loop={true}>
               {testimonials &&
                 testimonials.map((t) => (
                   <SwiperSlide key={t._id}>
