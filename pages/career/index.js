@@ -28,14 +28,14 @@ function index({ jobs }) {
               <Link
                 className="jobContent flex justify-start items-center bg-gray-100/50 p-3 rounded-sm"
                 href={`/career/${j.slug.current}`}>
-                <div className="p-5 bg-gray-200 mr-10">
-                  <MdOutlineWorkOutline className="text-4xl text-gray-600" />
+                <div className="p-3 xl:p-5 bg-gray-200 mr-2 md:mr-5 xl:mr-10">
+                  <MdOutlineWorkOutline className="text-2xl xl:text-4xl text-gray-600" />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold text-gray-800">
+                  <h4 className="xl:text-2xl font-bold text-gray-800">
                     {j.jobTitle}
                   </h4>
-                  <div className="flex items-center gap-10 mt-4">
+                  <div className="flex items-center gap-3 xl:gap-10 mt-2">
                     <div className="flex justify-start items-center gap-2">
                       <GoLocation className="text-xl font-bold text-gray-800" />
                       <p className="font-light">{j.location}</p>
@@ -46,7 +46,7 @@ function index({ jobs }) {
                     </div>
                   </div>
                 </div>
-                <div className="ml-auto py-2 px-4 bg-emerald-200 rounded-sm border-[1px] border-emerald-500">
+                <div className="ml-auto py-1 px-2 md:py-2 md:px-4 bg-emerald-200 rounded-sm border-[1px] border-emerald-500">
                   <p className="text-gray-800">{j.jobType}</p>
                 </div>
               </Link>
