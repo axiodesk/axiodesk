@@ -40,7 +40,7 @@ function index({ posts, categories }) {
                       <div>
                         <SlCalender className="text-gray-500 font-light" />
                       </div>
-                      <p className="text-gray-500 font-light">
+                      <p className="text-gray-500 font-light text-sm md:text-md">
                         {new Date(post._createdAt).toLocaleString("en-US", {
                           day: "numeric",
                           month: "long",
@@ -68,7 +68,7 @@ function index({ posts, categories }) {
               {categories &&
                 categories.map((c) => (
                   <span
-                    className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full"
+                    className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full text-sm md:text-md"
                     key={c._id}>
                     {c.title}
                   </span>

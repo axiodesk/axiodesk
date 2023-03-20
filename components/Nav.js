@@ -21,11 +21,11 @@ const Nav = () => {
         <img
           src="/img/axioLogo.png"
           alt="Logo"
-          className="w-32 hidden md:block"
+          className="w-32 xl:w-48 hidden md:block"
         />
         <img src="/img/favicon.png" alt="Logo" className="w-8 md:hidden" />
       </Link>
-      <div className={open ? `links lg:hidden` : `hidden lg:block lg:`}>
+      <div className={open ? `links xl:hidden` : `hidden xl:block`}>
         <ul
           className={
             open
@@ -83,7 +83,7 @@ const Nav = () => {
         </ul>
       </div>
       <div
-        className="ham cursor-pointer flex justify-center items-center gap-2 text-2xl lg:hidden"
+        className="ham cursor-pointer flex justify-center items-center gap-2 text-2xl xl:hidden"
         onClick={toggle}>
         <AiOutlineBars className="text-lg" />
         <span className="text-sm md:text-lg">MENU</span>

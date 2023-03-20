@@ -64,15 +64,15 @@ function project({ projects }) {
                 />
               </div>
               <div className="text md:ml-24 flex-1">
-                <h1 className="text-xl md:text-3xl font-extrabold text-[#7C0221] mb-4">
+                <h1 className="text-xl md:text-2xl font-extrabold text-[#7C0221] mb-4">
                   {p.title}
                 </h1>
-                <div className="w-full md:w-4/5 md:text-lg text-gray-500 font-light mb-10">
+                <div className="w-full md:w-4/5 text-sm md:text-md 2xl:text-lg text-gray-500 font-light mb-10">
                   <PortableText value={p.body} components={ptComponents} />
                 </div>
                 <Link
                   href={`${p.youtubeLink}`}
-                  className="py-3 px-8 border-[1px] border-[#7C0221] text-[#7C0221] hover:text-white hover:bg-[#7C0221] transition-all duration-300 text-lg">
+                  className="text-sm md:text-md 2xl:text-lg py-3 px-8 border-[1px] border-[#7C0221] text-[#7C0221] hover:text-white hover:bg-[#7C0221] transition-all duration-300">
                   Watch Video <span className="ml-3">&#8594;</span>
                 </Link>
               </div>

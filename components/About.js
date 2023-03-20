@@ -19,14 +19,14 @@ function About() {
             </h1>
           </div>
           <div className="w-full md:w-2/3">
-            <p className="text-gray-500 mb-5">
+            <p className="text-gray-500 mb-5 text-sm md:text-md 2xl:text-lg">
             At AxioDesk, we're dedicated to helping businesses like yours thrive in the digital world. With our team of experts and cutting-edge solutions, we're here to help you achieve your business goals and drive results.
             </p>
 
             <div className="mt-8">
               <Link
                 href="#"
-                className="border border-[#7C0221] py-2 px-6 mt-5 text-[#7C0221] uppercase tracking-widest text-sm font-semibold hover:bg-[#7C0221] hover:text-white transition-all duration-300">
+                className="border border-[#7C0221] py-2 px-6 mt-5 text-[#7C0221] uppercase tracking-widest text-xs md:text-sm 2xl:text-lg font-semibold hover:bg-[#7C0221] hover:text-white transition-all duration-300">
                 Read More <span className="ml-3">&#8594;</span>
               </Link>
             </div>

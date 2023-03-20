@@ -96,10 +96,10 @@ function service() {
                 <span className="text-white/80 text-md 2xl:text-2xl font-semibold uppercase">
                   What we do
                 </span>
-                <h1 className="text-2xl md:text-6xl text-white font-black w-full mt-4">
+                <h1 className="text-2xl md:text-4xl 2xl:text-5xl text-white font-black w-full mt-4">
                   Advertising Solutions
                 </h1>
-                <p className="text-white/40 mt-5 w-full md:w-2/3">
+                <p className="text-white/40 mt-5 w-full md:w-2/3 text-sm md:text-md">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   excepturi omnis qui aspernatur ex, sed magnam pariatur quod
                   repellat? Quo beatae vero facere saepe?
@@ -118,10 +118,10 @@ function service() {
                           className="w-10 md:w-16 mb-3"
                         />
                       )}
-                      <h3 className="font-bold mb-3 text-white text-lg uppercase">
+                      <h3 className="font-bold mb-3 text-white text-base md:text-lg uppercase">
                         {d.title}
                       </h3>
-                      <p className="text-gray-400 font-light">{d.desc}</p>
+                      <p className="text-gray-400 font-light text-base md:text-lg">{d.desc}</p>
                     </div>
                   ))}
                 </div>
@@ -138,7 +138,7 @@ function service() {
               <h1 className="text-2xl md:text-6xl text-gray-800 font-black w-full md:w-2/3 mt-4">
                 A process with you in mind
               </h1>
-              <p className="text-white/40 mt-5 w-full md:w-2/3">
+              <p className="text-gray-500 my-5 w-full md:w-2/3 text-sm md:text-base">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                 excepturi omnis qui aspernatur ex, sed magnam pariatur quod
                 repellat? Quo beatae vero facere saepe?
@@ -152,7 +152,7 @@ function service() {
                 <h2 className="text-lg md:text-xl text-gray-800 font-extrabold mt-4">
                   Guided Input
                 </h2>
-                <p className="font-light text-gray-500">
+                <p className="font-light text-gray-500 text-sm md:text-base">
                   Pretium accumsan in ipsum convallis pellentesque metus.
                 </p>
               </div>
@@ -162,7 +162,7 @@ function service() {
                 <h2 className="text-lg md:text-xl text-gray-800 font-extrabold mt-4">
                   Project Pulse
                 </h2>
-                <p className="font-light text-gray-500">
+                <p className="font-light text-gray-500 text-sm md:text-base">
                   Ut ac viverra tortor ut scelerisque tortor senectus.
                 </p>
               </div>
@@ -171,7 +171,7 @@ function service() {
                 <h2 className="text-lg md:text-xl text-gray-800 font-extrabold mt-4">
                   Deliveries
                 </h2>
-                <p className="font-light text-gray-500">
+                <p className="font-light text-gray-500 text-sm md:text-base">
                   Lobortis integer nec neque facilisis lacus amet neque.
                 </p>
               </div>
@@ -180,7 +180,7 @@ function service() {
                 <h2 className="text-lg md:text-xl text-gray-800 font-extrabold mt-4">
                   Iteration
                 </h2>
-                <p className="font-light text-gray-500">
+                <p className="font-light text-gray-500 text-sm md:text-base">
                   Amet consequat blandit tortor nibh mattis mauris enim.
                 </p>
               </div>

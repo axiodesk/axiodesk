@@ -23,18 +23,18 @@ function Footer() {
             <h2 className="text-white md:text-xl 2xl:text-2xl font-bold">
               Useful Links
             </h2>
-            <div className="mt-2 uppercase text-gray-400 text-sm space-y-3">
+            <div className="mt-2 uppercase text-gray-400 text-xs md:text-sm space-y-3">
               <div>
-                <Link href={``}>About</Link>
+                <Link href={`/about`}>About</Link>
               </div>
               <div>
-                <Link href={``}>Services</Link>
+                <Link href={`/service`}>Services</Link>
               </div>
               <div>
-                <Link href={``}>Projects</Link>
+                <Link href={`/project`}>Projects</Link>
               </div>
               <div>
-                <Link href={``}>Blog</Link>
+                <Link href={`/blog`}>Blog</Link>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ function Footer() {
             <h2 className="text-white font-bold md:text-xl 2xl:text-2xl">
               Keep in touch
             </h2>
-            <div className="mt-2 space-y-3 text-gray-400">
+            <div className="mt-2 space-y-3 text-gray-400 text-xs md:text-sm">
               <p>123 Demo St, San Fransisco, CA 45678, United States.</p>
               <div>
                 <Link href={`tel:+1 123-456-7890`}>+1 123-456-7890</Link>
@@ -56,7 +56,7 @@ function Footer() {
           </div>
         </div>
 
-        <p className="py-2 mt-14 uppercase text-center text-gray-500/100">
+        <p className="py-2 mt-14 uppercase text-center text-gray-500/100 text-xs md:text-sm">
           &copy; Axiodesk, {new Date().getFullYear()}{" "}
         </p>
       </div>

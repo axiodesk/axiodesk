@@ -42,16 +42,16 @@ const ptComponents = {
 
   block: {
     h1: ({ children }) => (
-      <h1 className="text-4xl font-bold pt-10">{children}</h1>
+      <h1 className="text-2xl md:text-3xl font-bold pt-10">{children}</h1>
     ),
     h2: ({ children }) => (
-      <h2 className="text-3xl font-bold pt-8">{children}</h2>
+      <h2 className="text-2xl font-bold pt-8">{children}</h2>
     ),
     h3: ({ children }) => (
-      <h3 className="text-2xl font-bold pt-6">{children}</h3>
+      <h3 className="text-xl font-bold pt-6">{children}</h3>
     ),
     h4: ({ children }) => (
-      <h4 className="text-xl font-bold pt-4">{children}</h4>
+      <h4 className="text-lg font-bold pt-4">{children}</h4>
     ),
     normal: ({ children }) => <p className="pt-2">{children}</p>,
 
@@ -103,7 +103,7 @@ function Details({ post }) {
                 />
               </div>
             )}
-            <div className="mt-5 w-full">
+            <div className="mt-5 w-full text-sm md:text-md">
               <PortableText value={body} components={ptComponents} />
             </div>
           </div>
@@ -125,7 +125,7 @@ function Details({ post }) {
         <div className="mt-16">
           <Link
             href={`/blog`}
-            className="py-2 px-8 border-[1px] border-[#7C0221] text-[#7C0221] hover:text-white hover:bg-[#7C0221] transition-all duration-300 text-lg rounded-sm">
+            className="py-2 px-8 border-[1px] border-[#7C0221] text-[#7C0221] hover:text-white hover:bg-[#7C0221] transition-all duration-300 text-sm md:text-md 2xl:text-lg rounded-sm">
             <span className="mr-3">&#8592;</span> Back to all post
           </Link>
         </div>

@@ -38,7 +38,7 @@ function index({team}) {
               <h1 className="text-2xl md:text-4xl text-gray-800 font-bold w-full mt-2">
               Meet Our Team of Experts
               </h1>
-              <p className="text-gray-500 w-full md:w-1/3 mt-2">
+              <p className="text-gray-500 w-full md:w-2/3 mt-2 text-sm md:text-md 2xl:text-lg">
               Our team of experienced professionals is dedicated to delivering exceptional solutions that drive results. Get to know our diverse backgrounds and skill sets and see how we can help take your business to the next level.
               </p>
             </div>
@@ -57,7 +57,7 @@ function index({team}) {
                           />
                         )}
                       </div>
-                      <div className="mt-3 text-lg md:text-xl text-[#7C0221] text-center">
+                      <div className="mt-3 md:text-xl text-[#7C0221] text-center text-sm md:text-md 2xl:text-lg">
                         {td.name}
                       </div>
                     </div>

@@ -63,10 +63,10 @@ export default function Home({testimonials, projects}) {
                         alt="Client Image"
                         className="w-[150px] h-[150px] md:w-48 md:h-48 object-cover rounded-full p-2"
                       />
-                      <div className="uppercase tracking-widest text-xl md:text-2xl ">
+                      <div className="uppercase tracking-widest text-base md:text-xl ">
                         {t.name}
                       </div>
-                      <div className="w-2/3 text-center py-12 text-gray-500 md:text-xl leading-7">
+                      <div className="w-2/3 text-center py-12 text-gray-500 text-sm md:text-md 2xl:text-lg leading-7">
                         {t.text}
                       </div>
                     </div>
@@ -85,10 +85,10 @@ export default function Home({testimonials, projects}) {
               <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
                 Featured works
               </span>
-              <h1 className="text-2xl md:text-6xl text-gray-800 font-black w-full">
+              <h1 className="text-2xl md:text-4xl 2xl:text-5xl text-gray-800 font-black w-full">
               See Our Success Stories
               </h1>
-              <p className="mt-5 text-gray-500 w-full  md:w-2/3">
+              <p className="mt-5 text-gray-500 w-full md:w-2/3 text-sm md:text-md 2xl:text-lg">
               We're proud of the results we've achieved for our clients. Take a look at our recent projects and see how our solutions have helped businesses like yours thrive in the digital world
               </p>
             </div>
@@ -100,12 +100,12 @@ export default function Home({testimonials, projects}) {
                     alt="Case Image"
                     className="w-full sm:w-[400px] sm:h-[300px] md:w-[576px] md:h-[400px] mt-8 rounded-sm hover:shadow-2xl transition-all duration-300"
                   />
-                  <h1 className="my-4 text-xl md:text-2xl 2xl:text-3xl text-gray-800 font-semibold">
+                  <h1 className="my-4 text-lg md:text-xl 2xl:text-2xl text-gray-800 font-semibold">
                     {c.title}
                   </h1>
                   <Link
                     href={`${c.link}`}
-                    className="mt-2 text-[#7C0221] cursor-pointer rounded-sm">
+                    className="mt-2 text-[#7C0221] cursor-pointer rounded-sm text-sm md:text-base">
                     Check on Youtube
                   </Link>
                 </div>
@@ -114,7 +114,7 @@ export default function Home({testimonials, projects}) {
             <div className="mt-10">
               <Link
                 href={`/project`}
-                className="text-xl md:text-2xl font-semibold text-[#7C0221]">
+                className="text-lg md:text-xl 2xl:text-2xl font-semibold text-[#7C0221]">
                 View All Works <span className="ml-3">&#8594;</span>
               </Link>
             </div>

@@ -13,7 +13,6 @@ import {
   AiFillTwitterSquare,
   AiFillLinkedin,
   AiFillGithub,
-  AiOutlineLink,
 } from "react-icons/ai";
 
 import {FaResearchgate} from 'react-icons/fa'
@@ -97,7 +96,7 @@ function Details({ teamData }) {
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-20">
           <div className="about">
             <h2 className="text-2xl font-bold mb-5">About Me</h2>
-            <div className="mt-5 w-full">
+            <div className="mt-5 w-full text-sm md:text-md 2xl:text-lg">
               <PortableText value={teamData.bio} components={ptComponents} />
             </div>
           </div>
@@ -107,17 +106,17 @@ function Details({ teamData }) {
                 <img
                   src={urlFor(teamData.image)}
                   alt="Main Image"
-                  className="w-full h-full object-cover rounded-full"
+                  className="w-full h-full object-cover md:rounded-full"
                 />
               </div>
             )}
           </div>
           <div className="details md:ml-20">
             <h2 className="text-2xl font-bold mb-5">Details</h2>
-            <p className="text-2xl font-light tracking-wider mb-5 w-full inline-block">
+            <p className="font-light tracking-wider mb-0 w-full inline-block text-base 2xl:text-lg">
               {teamData.name}
             </p>
-            <p className="text-lg font-light tracking-wider mb-5 w-full inline-block">
+            <p className="font-light tracking-wider mb-10 w-full inline-block text-sm md:text-md">
               {teamData.designation}
             </p>
             <div className="socialLinks flex gap-5 justify-start items-center">

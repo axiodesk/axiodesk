@@ -23,7 +23,7 @@ function about() {
           </div>
           <div className="w-full md:w-2/3 text-gray-500 mb-5 space-y-5">
             <div className="w-20 h-[2px] bg-[#7C0221]"></div>
-            <div className="mb-16">
+            <div className="mb-16 text-sm md:text-base">
               <p className="">
                 Id in massa et feugiat non enim non pretium pretium fermentum
                 donec neque pellentesque et sociis integer amet venenatis
@@ -81,7 +81,7 @@ function about() {
           </div>
           <div className="w-full md:w-2/3 text-gray-500 mb-5 space-y-5">
             <div className="w-20 h-[2px] bg-[#7C0221]"></div>
-            <div className="mb-16">
+            <div className="mb-16 text-sm md:text-base">
               <p className="">
                 Faucibus volutpat pellentesque turpis lacus pharetra massa
                 tellus vulputate ornare erat at sed enim, elementum purus arcu
@@ -101,7 +101,7 @@ function about() {
           </div>
           <div className="w-full md:w-2/3 text-gray-500 mb-5 space-y-5">
             <div className="w-20 h-[2px] bg-[#7C0221]"></div>
-            <div className="mb-16">
+            <div className="mb-16 text-sm md:text-base">
               <p className="">
                 Elit egestas nisl, pellentesque ante aliquam gravida ultrices
                 blandit ipsum ac felis egestas eget in facilisis varius risus,
