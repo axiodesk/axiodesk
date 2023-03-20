@@ -37,11 +37,11 @@ function index({ jobs }) {
                   </h4>
                   <div className="flex items-center gap-3 xl:gap-10 mt-2">
                     <div className="flex justify-start items-center gap-2">
-                      <GoLocation className="text-sm md:text-md font-bold text-gray-800" />
+                      <GoLocation className="text-sm md:text-base font-bold text-gray-800" />
                       <p className="font-light">{j.location}</p>
                     </div>
                     <div className="flex justify-start items-center gap-2">
-                      <AiOutlineDollarCircle className="text-sm md:text-md font-bold text-gray-800" />
+                      <AiOutlineDollarCircle className="text-sm md:text-base font-bold text-gray-800" />
                       <p className="font-light">{j.salary}</p>
                     </div>
                   </div>

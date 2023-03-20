@@ -9,7 +9,7 @@ function About() {
   return (
     <div className="pt-32 pb-10 px-5 lg:px-16 2xl:px-80" id="about">
       <div>
-        <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
+        <span className="text-[#7C0221] text-base font-semibold uppercase">
           Hi there!
         </span>
         <div className="flex justify-between items-start flex-col md:flex-row gap-5 md:gap-0 mt-2">
@@ -19,7 +19,7 @@ function About() {
             </h1>
           </div>
           <div className="w-full md:w-2/3">
-            <p className="text-gray-500 mb-5 text-sm md:text-md 2xl:text-lg">
+            <p className="text-gray-500 mb-5 text-sm md:text-base">
             At AxioDesk, we're dedicated to helping businesses like yours thrive in the digital world. With our team of experts and cutting-edge solutions, we're here to help you achieve your business goals and drive results.
             </p>
 

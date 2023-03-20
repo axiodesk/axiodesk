@@ -30,7 +30,7 @@ function index({team}) {
 
       <main className="pb-10 px-5 lg:px-16 2xl:px-80 ">
         <div className="mt-48 ">
-          <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
+          <span className="text-[#7C0221] text-sm md:text-base lg:text-lg font-semibold uppercase">
             About Us
           </span>
           <div className="">
@@ -38,7 +38,7 @@ function index({team}) {
               <h1 className="text-2xl md:text-4xl text-gray-800 font-bold w-full mt-2">
               Meet Our Team of Experts
               </h1>
-              <p className="text-gray-500 w-full md:w-2/3 mt-2 text-sm md:text-md 2xl:text-lg">
+              <p className="text-gray-500 w-full md:w-2/3 mt-2 text-sm md:text-base">
               Our team of experienced professionals is dedicated to delivering exceptional solutions that drive results. Get to know our diverse backgrounds and skill sets and see how we can help take your business to the next level.
               </p>
             </div>
@@ -57,7 +57,7 @@ function index({team}) {
                           />
                         )}
                       </div>
-                      <div className="mt-3 md:text-xl text-[#7C0221] text-center text-sm md:text-md 2xl:text-lg">
+                      <div className="mt-3 text-[#7C0221] text-center text-sm md:text-base 2xl:text-lg">
                         {td.name}
                       </div>
                     </div>

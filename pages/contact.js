@@ -27,7 +27,7 @@ function contact() {
               <h1 className="text-2xl md:text-3xl 2xl:text-4xl text-gray-800 font-black w-full">
               Ready to take your business to the next level?
               </h1>
-              <p className="mt-5 text-gray-500 w-full  md:w-2/3 text-sm md:text-md">
+              <p className="mt-5 text-gray-500 w-full  md:w-2/3 text-sm md:text-base">
               Contact us today for a free consultation and see how AxioDesk can help you achieve your goals.
               </p>
             </div>
@@ -88,7 +88,7 @@ function contact() {
                   className="p-3 bg-white border-[1px] border-gray-500 w-full sm:w-[500px] rounded-sm mb-6 placeholder:text-xs md:placeholder:text-sm"></textarea>
               </div>
               <div className="btn">
-                <button className="text-[#7C0221] py-2 px-8 border-[1px] border-[#7C0221] hover:bg-[#7C0221] hover:text-white transition-all duration-300 md:text-lg rounded-sm">
+                <button className="text-[#7C0221] py-2 px-8 border-[1px] border-[#7C0221] hover:bg-[#7C0221] hover:text-white transition-all duration-300 text-sm md:text-base rounded-sm">
                   Submit <span className="ml-3">&#8594;</span>
                 </button>
               </div>

@@ -68,7 +68,7 @@ function index({ posts, categories }) {
               {categories &&
                 categories.map((c) => (
                   <span
-                    className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full text-sm md:text-md"
+                    className="py-1 px-3 bg-gray-200 text-gray-700 inline-block rounded-full text-sm md:text-base"
                     key={c._id}>
                     {c.title}
                   </span>

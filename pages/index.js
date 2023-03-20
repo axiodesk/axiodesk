@@ -66,7 +66,7 @@ export default function Home({testimonials, projects}) {
                       <div className="uppercase tracking-widest text-base md:text-xl ">
                         {t.name}
                       </div>
-                      <div className="w-2/3 text-center py-12 text-gray-500 text-sm md:text-md 2xl:text-lg leading-7">
+                      <div className="w-2/3 text-center py-12 text-gray-500 text-sm md:text-base leading-7">
                         {t.text}
                       </div>
                     </div>
@@ -82,13 +82,13 @@ export default function Home({testimonials, projects}) {
         <div className="pt-5 pb-10 px-5 lg:px-16 2xl:px-80">
           <div>
             <div>
-              <span className="text-[#7C0221] text-md 2xl:text-2xl font-semibold uppercase">
+              <span className="text-[#7C0221] text-sm md:text-base lg:text-lg font-semibold uppercase">
                 Featured works
               </span>
               <h1 className="text-2xl md:text-4xl 2xl:text-5xl text-gray-800 font-black w-full">
               See Our Success Stories
               </h1>
-              <p className="mt-5 text-gray-500 w-full md:w-2/3 text-sm md:text-md 2xl:text-lg">
+              <p className="mt-5 text-gray-500 w-full md:w-2/3 text-sm md:text-base">
               We're proud of the results we've achieved for our clients. Take a look at our recent projects and see how our solutions have helped businesses like yours thrive in the digital world
               </p>
             </div>

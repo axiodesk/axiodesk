@@ -93,13 +93,13 @@ function service() {
           <div className="bg-[#1f2937] text-gray-50 py-20 px-5 lg:px-16 2xl:px-80">
             <div className="flex flex-col md:flex-row justify-between items-start">
               <div className="w-full md:w-3/4">
-                <span className="text-white/80 text-md 2xl:text-2xl font-semibold uppercase">
+                <span className="text-white/80 text-sm md:text-base lg:text-lg font-semibold uppercase">
                   What we do
                 </span>
                 <h1 className="text-2xl md:text-4xl 2xl:text-5xl text-white font-black w-full mt-4">
                   Advertising Solutions
                 </h1>
-                <p className="text-white/40 mt-5 w-full md:w-2/3 text-sm md:text-md">
+                <p className="text-white/40 mt-5 w-full md:w-2/3 text-sm md:text-base">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   excepturi omnis qui aspernatur ex, sed magnam pariatur quod
                   repellat? Quo beatae vero facere saepe?
@@ -121,7 +121,7 @@ function service() {
                       <h3 className="font-bold mb-3 text-white text-base md:text-lg uppercase">
                         {d.title}
                       </h3>
-                      <p className="text-gray-400 font-light text-base md:text-lg">{d.desc}</p>
+                      <p className="text-gray-400 font-light text-sm md:text-base">{d.desc}</p>
                     </div>
                   ))}
                 </div>

@@ -83,14 +83,14 @@ function Service() {
       {/* Main content */}
       <div className="bg-[#1f2937] text-gray-50 py-5 px-5 lg:px-16 2xl:px-80">
         <div className="flex flex-col md:flex-row justify-between items-start">
-          <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
+          <span className="text-[#ee3e38] text-sm md:text-base lg:text-lg font-semibold uppercase">
             What we do
           </span>
           <div className="w-full md:w-3/4">
             <h1 className="text-2xl md:text-4xl 2xl:text-5xl text-white font-black w-full">
             Services that Drive Results
             </h1>
-            <p className="text-white/40 mt-5 text-sm md:text-md 2xl:text-lg">
+            <p className="text-white/40 mt-5 text-sm md:text-base">
             Partner with AxioDesk and leverage our comprehensive digital services to achieve your business goals
             </p>
             <div className="services w-full mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2lx:grid-cols-4 gap-5 ">
@@ -104,7 +104,7 @@ function Service() {
                   <h3 className="font-bold mb-3 text-white text-base md:text-lg uppercase">
                     {d.title}
                   </h3>
-                  <p className="text-gray-400 font-light text-sm md:text-md">{d.desc}</p>
+                  <p className="text-gray-400 font-light text-sm md:text-base">{d.desc}</p>
                 </div>
               ))}
             </div>
