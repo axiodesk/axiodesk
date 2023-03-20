@@ -36,11 +36,10 @@ function index({team}) {
           <div className="">
             <div className="">
               <h1 className="text-2xl md:text-4xl text-gray-800 font-bold w-full mt-2">
-                Our Staff
+              Meet Our Team of Experts
               </h1>
               <p className="text-gray-500 w-full md:w-1/3 mt-2">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia
+              Our team of experienced professionals is dedicated to delivering exceptional solutions that drive results. Get to know our diverse backgrounds and skill sets and see how we can help take your business to the next level.
               </p>
             </div>
 

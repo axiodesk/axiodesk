@@ -25,12 +25,10 @@ function contact() {
           <div>
             <div>
               <h1 className="text-2xl md:text-6xl text-gray-800 font-black w-full">
-                Feel free to keep in touch
+              Ready to take your business to the next level?
               </h1>
               <p className="mt-5 text-gray-500 w-full  md:w-2/3">
-                Id in massa et feugiat non enim non pretium pretium fermentum
-                donec neque pellentesque et sociis integer amet venenatis
-                dignissim a porta maecenas non.
+              Contact us today for a free consultation and see how AxioDesk can help you achieve your goals.
               </p>
             </div>
             <div className="social mt-10">

@@ -36,6 +36,7 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-[#7C0221] transition-all duration-300">
+            <Link href="/about">About</Link>
           </li>
           <li className="hover:text-[#7C0221] transition-all duration-300">
             <Link href="/ourTeam">Our Team</Link>

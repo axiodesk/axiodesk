@@ -86,12 +86,10 @@ export default function Home({testimonials, projects}) {
                 Featured works
               </span>
               <h1 className="text-2xl md:text-6xl text-gray-800 font-black w-full">
-                Some of our cases
+              See Our Success Stories
               </h1>
               <p className="mt-5 text-gray-500 w-full  md:w-2/3">
-                Id in massa et feugiat non enim non pretium pretium fermentum
-                donec neque pellentesque et sociis integer amet venenatis
-                dignissim a porta maecenas non.
+              We're proud of the results we've achieved for our clients. Take a look at our recent projects and see how our solutions have helped businesses like yours thrive in the digital world
               </p>
             </div>
             <div className="cases mt-14 grid grid-cols-1 lg:grid-cols-2 gap-5">

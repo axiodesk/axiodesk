@@ -5,13 +5,13 @@ function Service() {
     {
       id: 1,
       title: "SEO",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      desc: "Increase online visibility and attract new customers with expert SEO",
       icon: "/img/serviceIcon/seo.svg",
     },
     {
       id: 2,
       title: "SMM",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      desc: "Build brand awareness and connect with your audience through social media.",
       icon: "/img/serviceIcon/smm.svg",
     },
     {
@@ -28,8 +28,8 @@ function Service() {
     },
     {
       id: 5,
-      title: "Customer/Product Support",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      title: "Customer Support",
+      desc: "Improve customer experience and drive loyalty with exceptional support.",
       icon: "/img/serviceIcon/cusSup.svg",
     },
     {
@@ -46,8 +46,8 @@ function Service() {
     },
     {
       id: 8,
-      title: "Virtual marketing assistance",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      title: "Virtual assistance",
+      desc: "Streamline operations and save time with professional virtual assistance.",
       icon: "/img/serviceIcon/va.svg",
     },
     {
@@ -59,7 +59,13 @@ function Service() {
     {
       id: 10,
       title: "Graphics Design",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      desc: "Stand out from the competition with stunning visual design.",
+      icon: "/img/serviceIcon/gd.svg",
+    },
+    {
+      id: 11,
+      title: "Web Design",
+      desc: "Create a user-friendly website that reflects your brand identity and boosts conversions.",
       icon: "/img/serviceIcon/gd.svg",
     },
   ];
@@ -82,12 +88,10 @@ function Service() {
           </span>
           <div className="w-full md:w-3/4">
             <h1 className="text-2xl md:text-6xl text-white font-black w-full">
-              Advertising Solutions
+            Services that Drive Results
             </h1>
             <p className="text-white/40 mt-5">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              excepturi omnis qui aspernatur ex, sed magnam pariatur quod
-              repellat? Quo beatae vero facere saepe?
+            Partner with AxioDesk and leverage our comprehensive digital services to achieve your business goals
             </p>
             <div className="services w-full mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2lx:grid-cols-4 gap-5 ">
               {data.map((d) => (
@@ -95,7 +99,7 @@ function Service() {
                   className="w-full border border-gray-400/20 border-dashed rounded-sm p-6"
                   key={d.id}>
                     {d.icon && (
-                      <img src={d.icon} alt="Icon" className="w-1/2 md:w-1/3 mb-3" />
+                      <img src={d.icon} alt="Icon" className="w-10 md:w-16 mb-3" />
                     )}
                   <h3 className="font-bold mb-3 text-white text-lg uppercase">
                     {d.title}
