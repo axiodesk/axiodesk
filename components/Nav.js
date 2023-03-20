@@ -23,7 +23,7 @@ const Nav = () => {
           alt="Logo"
           className="w-32 xl:w-48 hidden md:block"
         />
-        <img src="/img/favicon.png" alt="Logo" className="w-8 md:hidden" />
+        <img src="/img/favicon.png" alt="Logo" className="w-6 md:hidden" />
       </Link>
       <div className={open ? `links xl:hidden` : `hidden xl:block`}>
         <ul
