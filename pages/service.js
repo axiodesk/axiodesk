@@ -139,7 +139,7 @@ function service() {
                   Guided Input
                 </h2>
                 <p className="font-light text-gray-500 text-sm md:text-base">
-                  Pretium accumsan in ipsum convallis pellentesque metus.
+                We start by working closely with you to understand your business needs and provide tailored solutions.
                 </p>
               </div>
 
@@ -149,7 +149,7 @@ function service() {
                   Project Pulse
                 </h2>
                 <p className="font-light text-gray-500 text-sm md:text-base">
-                  Ut ac viverra tortor ut scelerisque tortor senectus.
+                Throughout the process, we keep you informed and up-to-date on our progress to ensure that we are meeting your expectations.
                 </p>
               </div>
               <div className="step border-l-2 pl-4 border-gray-800">
@@ -158,7 +158,7 @@ function service() {
                   Deliveries
                 </h2>
                 <p className="font-light text-gray-500 text-sm md:text-base">
-                  Lobortis integer nec neque facilisis lacus amet neque.
+                Our team of experts is committed to delivering top-notch solutions that exceed our clients' expectations.
                 </p>
               </div>
               <div className="step border-l-2 pl-4 border-gray-800">
@@ -167,7 +167,7 @@ function service() {
                   Iteration
                 </h2>
                 <p className="font-light text-gray-500 text-sm md:text-base">
-                  Amet consequat blandit tortor nibh mattis mauris enim.
+                We believe in continuous improvement, and we're always looking for ways to enhance our process to better serve our clients.
                 </p>
               </div>
             </div>
