@@ -102,7 +102,7 @@ function Details({ teamData }) {
           </div>
           <div className="img">
             {teamData.image && (
-              <div className="w-[400px] h-[400px]">
+              <div className="w-[300px] h-[300px]">
                 <img
                   src={urlFor(teamData.image)}
                   alt="Main Image"

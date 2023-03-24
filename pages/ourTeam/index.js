@@ -9,12 +9,6 @@ import CustomHead from '@/components/CustomHead'
 import Nav from '@/components/Nav'
 import Header from '@/components/Header'
 
-import {
-  AiFillFacebook,
-  AiFillTwitterSquare,
-  AiFillLinkedin,
-  AiFillInstagram,
-} from "react-icons/ai";
 
 
 function urlFor(source) {
@@ -53,12 +47,15 @@ function index({team}) {
                           <img
                             src={urlFor(td.image)}
                             alt="Profile picture"
-                            className="w-48 h-48 md:w-72 md:h-72 xl:w-72 xl:h-96 rounded-xl flex justify-center items-center object-cover cursor-pointer hover:scale-105 transition-all duration-200 hover:shadow-2xl"
+                            className="w-32 h-32 md:w-40 md:h-40 xl:w-48 xl:h-72 rounded-xl flex justify-center items-center object-cover cursor-pointer hover:scale-105 transition-all duration-200 hover:shadow-2xl"
                           />
                         )}
                       </div>
-                      <div className="mt-3 text-[#7C0221] text-center text-sm md:text-base 2xl:text-lg">
+                      <div className="mt-3 text-[#7C0221] text-left text-sm md:text-base 2xl:text-lg">
                         {td.name}
+                      </div>
+                      <div className='text-xs md:text-sm 2xl:text-base'>
+                        {td.designation}
                       </div>
                     </div>
                   </Link>
