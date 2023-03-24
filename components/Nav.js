@@ -16,7 +16,8 @@ const Nav = () => {
   };
   return (
     <nav
-      className={`h-16 px-5 lg:px-16 2xl:px-80 w-full bg-white flex justify-between items-center fixed top-0 left-0 z-50 shadow-xl`}>
+      className={`h-16 px-5 lg:px-16 2xl:px-80 w-full bg-white flex justify-between items-center fixed top-0 left-0 z-50 shadow-xl`}
+    >
       <Link href={`/`} className="logo cursor-pointer">
         <img
           src="/img/axioLogo.png"
@@ -31,7 +32,8 @@ const Nav = () => {
             open
               ? `absolute top-16 left-1/2 -translate-x-1/2 flex justify-center items-center py-8 gap-5 flex-col bg-white w-[90%] rounded-sm shadow-xl`
               : `relative flex gap-8`
-          }>
+          }
+        >
           <li className="hover:text-[#7C0221] transition-all duration-300">
             <Link href="/">Home</Link>
           </li>
@@ -84,7 +86,8 @@ const Nav = () => {
       </div>
       <div
         className="ham cursor-pointer flex justify-center items-center gap-2 text-2xl xl:hidden"
-        onClick={toggle}>
+        onClick={toggle}
+      >
         <AiOutlineBars className="text-lg" />
         <span className="text-sm md:text-lg">MENU</span>
       </div>

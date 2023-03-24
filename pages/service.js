@@ -30,13 +30,13 @@ function service() {
     {
       id: 3,
       title: "LinkedIn Outreach",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      desc: "Grow your LinkedIn network and generate valuable leads for your business. \nUnlock the full potential of your LinkedIn network with our game-changing LinkedIn Outreach Mastery service. We specialize in creating highly personalized, professional, and effective outreach campaigns to help you build meaningful connections, generate leads, and accelerate your business growth on LinkedIn.",
       icon: "/img/serviceIcon/linkedInOut.svg",
     },
     {
       id: 4,
       title: "Facebook Campaign",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      desc: "Take your Facebook marketing to the next level with our Facebook Campaign Accelerator service. Our team of social media experts and creative wizards will design, manage, and optimize your Facebook advertising campaigns to maximize your reach, drive targeted traffic, and convert more leads into loyal customers.",
       icon: "/img/serviceIcon/fbCamp.svg",
     },
     {
@@ -47,36 +47,24 @@ function service() {
     },
     {
       id: 6,
-      title: "Digital Marketing Website",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
-      icon: "/img/serviceIcon/dm.svg",
-    },
-    {
-      id: 7,
       title: "Marketing Blue Print and consultancy",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
+      desc: "At AxioDesk, we know that every business is unique. That's why we offer customized consultancy and blueprint services.",
       icon: "/img/serviceIcon/consultancy.svg",
     },
     {
-      id: 8,
+      id: 7,
       title: "Virtual assistance",
       desc: "Streamline operations and save time with professional virtual assistance.",
       icon: "/img/serviceIcon/va.svg",
     },
     {
       id: 9,
-      title: "Affliate Ad marketing",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
-      icon: "/img/serviceIcon/affmar.svg",
-    },
-    {
-      id: 10,
       title: "Graphics Design",
       desc: "Stand out from the competition with stunning visual design.",
       icon: "/img/serviceIcon/gd.svg",
     },
     {
-      id: 11,
+      id: 10,
       title: "Web Design",
       desc: "Create a user-friendly website that reflects your brand identity and boosts conversions.",
       icon: "/img/serviceIcon/gd.svg",
@@ -139,9 +127,7 @@ function service() {
                 A process with you in mind
               </h1>
               <p className="text-gray-500 my-5 w-full md:w-2/3 text-sm md:text-base">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                excepturi omnis qui aspernatur ex, sed magnam pariatur quod
-                repellat? Quo beatae vero facere saepe?
+              Our customized approach puts you at the center of everything we do. We get to know your business, develop a tailored plan, and maintain open communication to deliver top-notch solutions that exceed expectations. Trust us to guide you through today's competitive digital landscape.
               </p>
             </div>
 
