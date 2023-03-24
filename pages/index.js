@@ -30,7 +30,7 @@ function urlFor(source) {
 export default function Home({testimonials, projects}) {
   return (
     <div>
-      <CustomHead pageName={`Scalable solutions. Unstoppable Growth`} />
+      <CustomHead pageName={`Scalable Solutions. Unstoppable Growth`} />
       <main>
         {/* Nav */}
         <Nav />
