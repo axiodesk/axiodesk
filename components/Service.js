@@ -6,67 +6,67 @@ function Service() {
       id: 1,
       title: "SEO",
       desc: "Increase online visibility and attract new customers with expert SEO",
-      icon: "/img/serviceIcon/seo.svg",
+      icon: "/img/serviceIcon/seo.png",
     },
     {
       id: 2,
       title: "SMM",
       desc: "Build brand awareness and connect with your audience through social media.",
-      icon: "/img/serviceIcon/smm.svg",
+      icon: "/img/serviceIcon/smm.png",
     },
     {
       id: 3,
       title: "LinkedIn Outreach",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
-      icon: "/img/serviceIcon/linkedInOut.svg",
+      icon: "/img/serviceIcon/linkedIn.png",
     },
     {
       id: 4,
       title: "Facebook Campaign",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
-      icon: "/img/serviceIcon/fbCamp.svg",
+      icon: "/img/serviceIcon/fb.png",
     },
     {
       id: 5,
       title: "Customer Support",
       desc: "Improve customer experience and drive loyalty with exceptional support.",
-      icon: "/img/serviceIcon/cusSup.svg",
+      icon: "/img/serviceIcon/cus.png",
     },
     {
       id: 6,
       title: "Digital Marketing Website",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
-      icon: "/img/serviceIcon/dm.svg",
+      icon: "/img/serviceIcon/dm.png",
     },
     {
       id: 7,
       title: "Marketing Blue Print and consultancy",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
-      icon: "/img/serviceIcon/consultancy.svg",
+      icon: "/img/serviceIcon/bp.png",
     },
     {
       id: 8,
       title: "Virtual assistance",
       desc: "Streamline operations and save time with professional virtual assistance.",
-      icon: "/img/serviceIcon/va.svg",
+      icon: "/img/serviceIcon/va.png",
     },
     {
       id: 9,
       title: "Affliate Ad marketing",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
-      icon: "/img/serviceIcon/affmar.svg",
+      icon: "/img/serviceIcon/afm.png",
     },
     {
       id: 10,
       title: "Graphics Design",
       desc: "Stand out from the competition with stunning visual design.",
-      icon: "/img/serviceIcon/gd.svg",
+      icon: "/img/serviceIcon/gd.png",
     },
     {
       id: 11,
       title: "Web Design",
       desc: "Create a user-friendly website that reflects your brand identity and boosts conversions.",
-      icon: "/img/serviceIcon/gd.svg",
+      icon: "/img/serviceIcon/wd.png",
     },
   ];
 
@@ -99,7 +99,13 @@ function Service() {
                   className="w-full border border-gray-400/20 border-dashed rounded-sm p-6"
                   key={d.id}>
                     {d.icon && (
-                      <img src={d.icon} alt="Icon" className="w-10 md:w-16 mb-3" />
+                      <div className="w-12 h-12 md:w-16 md:h-16 mb-3">
+                      <img
+                      src={d.icon}
+                      alt="Icon"
+                      className="w-full"
+                    />
+                    </div>
                     )}
                   <h3 className="font-bold mb-3 text-white text-base md:text-lg uppercase">
                     {d.title}
