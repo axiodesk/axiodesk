@@ -43,15 +43,16 @@ function Footer() {
               Keep in touch
             </h2>
             <div className="mt-2 space-y-3 text-gray-400 text-xs md:text-sm">
-              <p>123 Demo St, San Fransisco, CA 45678, United States.</p>
+              <p>4611 Taft Boulevard, Wichita Falls, <br/> Texas 76308</p>
               <div>
-                <Link href={`tel:+1 123-456-7890`}>+1 123-456-7890</Link>
+                <Link href={`tel:+(940) 215-4898`}>+(940) 215-4898</Link>
               </div>
-              <div>
+              {/* No email at this time */}
+              {/* <div>
                 <Link href={`mailto:axiodesk@gmail.com`}>
                   axiodesk@gmail.com
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
