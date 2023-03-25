@@ -69,7 +69,7 @@ function index({team}) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const team = await client.fetch(groq`
       *[_type == "team"] | order(_createdAt asc){
         _id,
