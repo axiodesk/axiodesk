@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 import { AiOutlineBars } from "react-icons/ai";
@@ -11,12 +11,30 @@ import {
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const [showShadow, setShowShadow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 0){
+      setShowShadow(true);
+    } else {
+      setShowShadow(false);
+    }
+  }
+
   const toggle = () => {
     return setOpen(!open);
   };
   return (
     <nav
-      className={`h-16 px-5 lg:px-16 2xl:px-80 w-full bg-white flex justify-between items-center fixed top-0 left-0 z-50 shadow-xl`}
+      className={showShadow ? `h-16 px-5 lg:px-16 2xl:px-80 w-full bg-white flex justify-between items-center fixed top-0 left-0 z-50 shadow-xl transition-shadow` : `h-16 px-5 lg:px-16 2xl:px-80 w-full bg-white flex justify-between items-center fixed top-0 left-0 z-50`}
     >
       <Link href={`/`} className="logo cursor-pointer">
         <img
