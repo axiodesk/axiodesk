@@ -8,6 +8,7 @@ import client from "../../lib/client";
 import CustomHead from '@/components/CustomHead'
 import Nav from '@/components/Nav'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer';
 
 
 
@@ -65,6 +66,8 @@ function index({team}) {
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
