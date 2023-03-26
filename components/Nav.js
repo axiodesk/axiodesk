@@ -94,7 +94,7 @@ const Nav = () => {
                 </Link>
               </div>
               <div>
-                <Link href={``}>
+                <Link href={`https://www.linkedin.com/company/axiodesk/`}>
                   <AiFillLinkedin className="text-2xl hover:text-[#7C0221] transition duration-300" />
                 </Link>
               </div>
