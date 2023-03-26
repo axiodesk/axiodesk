@@ -79,7 +79,7 @@ const Nav = () => {
           <li>
             <div className="social flex justify-center items-center gap-5 text-gray-500">
               <div>
-                <Link href={``}>
+                <Link href={`https://www.facebook.com/profile.php?id=100090226435017`}>
                   <AiFillFacebook className="text-2xl hover:text-[#7C0221] transition duration-300" />
                 </Link>
               </div>
@@ -88,11 +88,11 @@ const Nav = () => {
                   <AiFillTwitterSquare className="text-2xl hover:text-[#7C0221] transition duration-300" />
                 </Link>
               </div>
-              <div>
+              {/* <div>
                 <Link href={``}>
                   <AiFillInstagram className="text-2xl hover:text-[#7C0221] transition duration-300" />
                 </Link>
-              </div>
+              </div> */}
               <div>
                 <Link href={`https://www.linkedin.com/company/axiodesk/`}>
                   <AiFillLinkedin className="text-2xl hover:text-[#7C0221] transition duration-300" />
