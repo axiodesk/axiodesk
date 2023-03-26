@@ -51,18 +51,18 @@ function contact() {
                 </p>
               </div>
               <div className="flex justify-start items-center gap-5">
-                <Link href={``}>
+                <Link href={`https://www.facebook.com/profile.php?id=100090226435017`}>
                   <AiFillFacebook className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
                 </Link>
-                <Link href={``}>
+                <Link href={`https://www.linkedin.com/company/axiodesk/`}>
                   <AiFillLinkedin className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
                 </Link>
                 <Link href={``}>
                   <AiFillTwitterSquare className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
                 </Link>
-                <Link href={``}>
+                {/* <Link href={``}>
                   <AiFillInstagram className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
