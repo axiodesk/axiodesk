@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from '@emailjs/browser';
+
 import Link from "next/link";
 
 import CustomHead from "@/components/CustomHead";
@@ -14,6 +16,17 @@ import {
 } from "react-icons/ai";
 
 function contact() {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
+      .then((result) => {
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
+  }
   return (
     <>
       <CustomHead pageName="Contact" />
@@ -54,9 +67,10 @@ function contact() {
             </div>
           </div>
           <div className="w-full md:w-[500px] mt-10 md:mt-0">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="group">
                 <input
+                name="user_name"
                   type="text"
                   placeholder="Name *"
                   required
@@ -65,6 +79,7 @@ function contact() {
               </div>
               <div className="group">
                 <input
+                name="user_email"
                   type="email"
                   placeholder="Email *"
                   required
@@ -72,15 +87,8 @@ function contact() {
                 />
               </div>
               <div className="group">
-                <input
-                  type="text"
-                  placeholder="Subject *"
-                  required
-                  className="p-3 bg-white border-[1px] border-gray-500 w-full sm:w-[500px] rounded-sm mb-5 placeholder:text-xs md:placeholder:text-sm"
-                />
-              </div>
-              <div className="group">
                 <textarea
+                name="message"
                   cols="30"
                   rows="5"
                   placeholder="Message *"
@@ -88,9 +96,7 @@ function contact() {
                   className="p-3 bg-white border-[1px] border-gray-500 w-full sm:w-[500px] rounded-sm mb-6 placeholder:text-xs md:placeholder:text-sm"></textarea>
               </div>
               <div className="btn">
-                <button className="text-[#7C0221] py-2 px-8 border-[1px] border-[#7C0221] hover:bg-[#7C0221] hover:text-white transition-all duration-300 text-sm md:text-base rounded-sm">
-                  Submit <span className="ml-3">&#8594;</span>
-                </button>
+                <input className="text-[#7C0221] py-2 px-8 border-[1px] border-[#7C0221] hover:bg-[#7C0221] hover:text-white transition-all duration-300 text-sm md:text-base rounded-sm cursor-pointer" type="submit" value="Send" />
               </div>
             </form>
           </div>
