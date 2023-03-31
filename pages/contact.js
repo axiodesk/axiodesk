@@ -16,17 +16,19 @@ import {
 } from "react-icons/ai";
 
 function contact() {
-  const form = useRef()
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-    emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
-      .then((result) => {
-        console.log(result.text)
-      }, (error) => {
-        console.log(error.text)
-      })
-  }
+  // Not using form
+  // const form = useRef()
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault()
+  //   emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
+  //     .then((result) => {
+  //       console.log(result.text)
+  //     }, (error) => {
+  //       console.log(error.text)
+  //     })
+  // }
   return (
     <>
       <CustomHead pageName="Contact" />
@@ -34,7 +36,7 @@ function contact() {
       <Nav />
       <Header title={`Contact`} />
       <main className="px-5 lg:px-16 2xl:px-80 py-16 md:py-20">
-        <div className="flex flex-col md:flex-row justify-start items-start gap-5">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-5">
           <div>
             <div>
               <h1 className="text-2xl md:text-3xl 2xl:text-4xl text-gray-800 font-black w-full">
@@ -60,14 +62,11 @@ function contact() {
                 <Link href={``}>
                   <AiFillTwitterSquare className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
                 </Link>
-                {/* <Link href={``}>
-                  <AiFillInstagram className="text-2xl md:text-3xl text-gray-600 hover:text-[#7C0221] transition duration-300" />
-                </Link> */}
               </div>
             </div>
           </div>
           <div className="w-full md:w-[500px] mt-10 md:mt-0">
-            <form ref={form} onSubmit={sendEmail}>
+            {/* <form ref={form} onSubmit={sendEmail}>
               <div className="group">
                 <input
                 name="user_name"
@@ -98,7 +97,10 @@ function contact() {
               <div className="btn">
                 <input className="text-[#7C0221] py-2 px-8 border-[1px] border-[#7C0221] hover:bg-[#7C0221] hover:text-white transition-all duration-300 text-sm md:text-base rounded-sm cursor-pointer" type="submit" value="Send" />
               </div>
-            </form>
+            </form> */}
+            
+            <h3 className="text-[#7C0221] text-2xl md:text-3xl 2xl:text-4xl ">Contact us at <span className="select-none font-semibold">axiodesk@gmail.com</span></h3>
+
           </div>
         </div>
       </main>
